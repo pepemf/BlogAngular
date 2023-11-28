@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@500&display=swap');
+
+.menu__title__container{
+  color: #fff;
+
+}
+
+.menu__title__container > h1{
+  font-size: 8rem;
+  font-weight: 300;
+  margin: 15px 0 15px 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'Palanquin Dark', sans-serif;
+}
+
+.menu__title__container > hr {
+  width: 100%;
+  margin: 20px 0 15px 0;
+  border: 1px solid #fff;
+}
