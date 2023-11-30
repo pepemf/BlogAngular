@@ -2,7 +2,7 @@
 
 .menu__title__container{
   color: #fff;
-
+  width: 100vw;
 }
 
 .menu__title__container > h1{
