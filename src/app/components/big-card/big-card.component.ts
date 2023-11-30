@@ -1,4 +1,5 @@
 import { Component, OnInit, Input} from '@angular/core';
+import { dataFake } from '../../Data/dataFake';
 
 @Component({
   selector: 'app-big-card',
@@ -14,9 +15,20 @@ export class BigCardComponent implements OnInit {
   public description: string =
     'Description placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
   @Input()
-  public id: string = "0";
+  public id: string | null = "0";
 
-  constructor() {}
+  constructor() {  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.setValuesToContent(this.id);
+  }
+
+  setValuesToContent(id: string | null): void {
+    const data = dataFake.filter((item) => item.id === id)[0];
+
+    this.photoCover = data.photo;
+    this.title = data.title;
+    this.description = data.description.substring(0, 120) + '...';
+  }
+
 }

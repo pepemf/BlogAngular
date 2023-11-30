@@ -1,7 +1,7 @@
 export const dataFake = [
   {
     id: '0',
-    photo: 'https://placehold.co/600x400',
+    photo: 'https://placehold.co/600x800',
     title:
       'Rebelião Ganha Impulso: Novas Alianças se Formam Contra a Nova Ordem',
     description:

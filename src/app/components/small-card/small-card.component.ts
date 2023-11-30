@@ -1,9 +1,10 @@
 import { Component, Input, OnInit} from '@angular/core';
+import { dataFake } from '../../Data/dataFake';
 
 @Component({
   selector: 'app-small-card',
   templateUrl: './small-card.component.html',
-  styleUrl: './small-card.component.css'
+  styleUrl: './small-card.component.css',
 })
 export class SmallCardComponent implements OnInit {
   @Input()
@@ -11,10 +12,18 @@ export class SmallCardComponent implements OnInit {
   @Input()
   public title: string = 'Title Placeholder';
   @Input()
-  public id: string = "0";
+  public id: string = '0';
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.setValuesToContent(this.id);
+  }
 
+  setValuesToContent(id: string | null): void {
+    const data = dataFake.filter((item) => item.id === id)[0];
+
+    this.photoCover = data.photo;
+    this.title = data.title;
+  }
 }
