@@ -10,6 +10,8 @@ export class SmallCardComponent implements OnInit {
   public photoCover: string = 'https://placehold.co/300x200';
   @Input()
   public title: string = 'Title Placeholder';
+  @Input()
+  public id: string = "0";
 
   constructor() {}
 

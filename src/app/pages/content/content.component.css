@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@500&display=swap');
+
+:root{
+  --title-color: #f1f1f3;
+  --description-color: #dbd8e3;
+
+}
+
+.contaier__component{
+  width: 100vw;
+  height: 100vh;
+
+  margin: 20px 0 0 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__cover > img{
+  width: 600px;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(243, 241, 241, 0.75);
+}
+
+.content__title{
+  width: 65rem;
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--title-color);
+  margin: 20px 0px;
+}
+
+.content__description{
+  width: 55rem;
+}
+
+.content__description > p {
+  color: var(--description-color);
+  font-size: 22rem;
+  font-weight: 500;
+  text-align: justify;
+  margin: 20px 0px;
+}

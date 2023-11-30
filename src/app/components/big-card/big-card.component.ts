@@ -13,6 +13,8 @@ export class BigCardComponent implements OnInit {
   @Input()
   public description: string =
     'Description placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+  @Input()
+  public id: string = "0";
 
   constructor() {}
 

@@ -1,10 +1,38 @@
+
+.container__menu-bar{
+  width: 100vw;
+  padding-bottom: 1rem;
+}
+
 .container__menu-bar > ul{
   display: flex;
   flex-direction: row;
   justify-content: center;
   list-style: none;
-}
+  }
 
 .container__menu-bar>ul>li{
-  margin: 0 10px;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.container__menu-bar>ul>li>a{
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.container__menu-bar>ul>li>a:hover {
+  background-color: white;
+  color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  border-radius: 10px;
+  padding: 10px 15px;
+  transition: all 0.2s ease-in-out;
 }
