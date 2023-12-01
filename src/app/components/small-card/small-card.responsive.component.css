@@ -1,0 +1,31 @@
+@media screen and (max-width: 1130px) {
+  .container__small-card {
+    width: 90vw;
+    margin: 1rem 5vw;
+  }
+
+  .container__small-card-content{
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .small-card_Img > img {
+    border-radius: 5px;
+    width: 40vw;
+    margin: 0 1rem 0 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .small-card_Img > img:hover {
+    transform: scale(1);
+    box-shadow: 0px 0px 10px 0px rgba(243, 241, 241, 0.75);
+  }
+
+  .small-card__title > h1{
+    font-size: 1.4rem;
+    margin: 0 0 10px 0;
+  }
+}

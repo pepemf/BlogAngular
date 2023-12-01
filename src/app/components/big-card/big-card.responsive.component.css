@@ -1,0 +1,24 @@
+@media screen and (max-width: 1130px) {
+  *{margin: 0;padding: 0;}
+
+  .big__card__container {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    align-items: center;
+  }
+
+  .big__card__container__image{
+    width: 90vw;
+  }
+
+  .big-card__title > h1{
+    width: 90vw;
+    margin: 0.1rem 0;
+  }
+
+  .big-card__description>p {
+    width: 90vw;
+    margin: 0.4rem 0 2rem 0;
+  }
+}

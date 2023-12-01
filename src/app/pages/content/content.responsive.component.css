@@ -51,7 +51,7 @@
   }
 }
 
-@media screen and (min-width: 779px) and (max-width: 1070px) {
+@media screen and (min-width: 768px) and (max-width: 1070px) {
   .contaier__component {
     width: 100vw;
     height: 90vh;

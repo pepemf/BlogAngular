@@ -6,7 +6,7 @@
   }
 }
 
-@media screen and (min-width: 779px) and (max-width: 1380px) {
+@media screen and (min-width: 768px) and (max-width: 1380px) {
 
   .menu__title__container>h1 {
       font-size: 8vw;

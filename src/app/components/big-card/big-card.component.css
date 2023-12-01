@@ -12,6 +12,7 @@
 .big__card__container__image{
   width: 100%;
   background-color: #e6e6e6;
+  border-radius: 5px;
 }
 
 .big-card__title > h1{

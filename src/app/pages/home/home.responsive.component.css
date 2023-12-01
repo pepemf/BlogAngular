@@ -1,3 +1,8 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1130px) {
+.container__articles{
+  width: 100vw;
+  display: block;
+
+}
 
 }

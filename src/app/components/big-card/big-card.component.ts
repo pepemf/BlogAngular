@@ -4,7 +4,7 @@ import { dataFake } from '../../Data/dataFake';
 @Component({
   selector: 'app-big-card',
   templateUrl: './big-card.component.html',
-  styleUrl: './big-card.component.css',
+  styleUrls: ['./big-card.component.css', 'big-card.responsive.component.css'],
 })
 export class BigCardComponent implements OnInit {
   @Input()
@@ -15,9 +15,9 @@ export class BigCardComponent implements OnInit {
   public description: string =
     'Description placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
   @Input()
-  public id: string | null = "0";
+  public id: string | null = '0';
 
-  constructor() {  }
+  constructor() {}
 
   ngOnInit(): void {
     this.setValuesToContent(this.id);
@@ -30,5 +30,4 @@ export class BigCardComponent implements OnInit {
     this.title = data.title;
     this.description = data.description.substring(0, 120) + '...';
   }
-
 }
